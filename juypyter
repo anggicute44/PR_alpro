@@ -1,0 +1,18 @@
+%matplotlib inline
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(0, 10, 100)  # Menentukan jumlah titik
+
+y = np.sin(x)
+z = np.cos(x)
+
+plt.plot(x, y, 'b', label='Sin')
+plt.plot(x, z, 'r', label='Cos')
+
+plt.xlabel('Radians')
+plt.ylabel('Value')
+plt.title('Plotting Demonstration')
+plt.legend()  # label sudah diberikan di plot
+plt.grid()
